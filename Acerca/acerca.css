@@ -2,174 +2,79 @@
 
 body{
 
-   font-family: 'Times New Roman', Times, serif;
-   font-weight: normal;
-   font-size: 100%;
-   margin: 0;
-   color: black;
-   background-image: url(../Imagenes/acerca.jpg);
-}
-/*
-.contenedor{
-       background-color: rgb(183, 226, 226);
-      
-       
-}
-*/
-
-.bienvenido h3{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-} .bienvenido p{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
     color: black;
-    border-radius: 15px;
-    text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.1); /*con esto creo un border suave */
-    border-style: solid;
-    content: normal;
-    background-color: rgb(226, 226, 193);
-}
+    background-image: url(../Imagenes/acerca.jpg);
+ }
 
-.mision h3{
-align-items: center;
+
+#contenedor{
 display: flex;
 justify-content: center;
+align-items: center;
+height: 600px; /*le cambio la altura*/
+
+
 
 }
- .mision p {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 1.2rem;
-    color: black;
-    border-radius: 15px;
+#contenedor div{
+    height: 500px;
+    width: 335px;
+    background-color: rgb(189, 238, 240);
+    margin: 60px;
     text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.1);  /*con esto creo un border suave */
-    border-style: solid;
-    content: normal;
-    background-color: rgb(226, 226, 193);
+
+}
+#contenedor div.mision{
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#contenedor div.mision:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.vision h3{
+#contenedor div.vision{
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#contenedor div.vision:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contenedor div.acerca{
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#contenedor div.acerca:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+img.img_vision {
+    width: 60px;
+    height: 60px;
    
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-        
-} .vision p{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 1.2rem;
-    color: black;
-    border-radius: 15px;
-    text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-style: solid;
-    content: normal;
-    background-color:  rgb(226, 226, 193);
+
 }
 
-/* Estilos generales */
-.instalaciones h3{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-} 
-.instalaciones p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: black;
+img.img_mision {
+    width: 60px;
+    height: 60px;
+   
 }
 
-/* Estilos de la lista */
-#lista {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+img.img_acerca {
+    width: 60px;
+    height: 60px;
+   
 }
-
-/* Estilos para cada elemento de la lista */
-#lista li {
-    width: 150px;
-    height: 150px;
-    background-color: rgb(226, 226, 193);
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    transition: transform 0.3s ease; /* Suaviza la transformación */
-}
-
-#lista li:hover {
-    transform: scale(1.1); /* Aumenta el tamaño al pasar el puntero */
-}
-
-
-
-
-.compromiso h3{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-} 
-.compromiso p{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 1.2rem;
-    color: black;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    text-align: center;
-    border-style: solid;
-    content: normal;
-    background-color: rgb(226, 226, 193);
-}
-/* Vista para pantallas de 1200px*/
-@media (max-width: 1200px){
-    .contenedor{
-        min-width: 820px;
-        background-color: rgb(183, 226, 226);
-        flex-direction: column;
-        align-items: center;
-    }
-    h1.acerca{
-
-        order:-1;
-    }
-}
-/* Vista para pantallas de 800px*/
-@media (max-width: 800px){
-    .contenedor{
-        min-width: 100%;
-        background-color: rgb(183, 226, 226);
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;  /* Centra el contenedor en la pantalla */
-        text-align: center;          /* Centra el texto dentro del contenedor */
-        display: flex;    
-        justify-content: center;
-    }
-    h1.acerca{
-
-        order:-1;
-    }
-}
-
