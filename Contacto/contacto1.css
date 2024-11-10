@@ -1,0 +1,84 @@
+body {
+ 
+    font-family: 'Noto Sans JP', sans-serif;	
+	background: #fffefe;
+
+    font-weight: normal;
+    font-size: 1000px;
+    margin: 0;
+    color: black;
+    background-image: url(../Contacto/Imagenes/isla.jpg);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.barra {
+  /*  background-image: url(../Imagenes/ce.jpg);
+    background-color: rgb(189, 238, 240); */
+    background-color: #d1d1d1;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    background-size: cover;
+    
+
+
+}
+
+.barra a {
+
+    color: aqua;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    transition: .3s ease-out all;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.barra a:hover {
+    background: #080205;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+
+.contenedor_barra {
+  
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 60px;
+    text-align: center;
+    /*le cambio la altura*/
+}

@@ -1,0 +1,130 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.barra {
+  /*  background-image: url(../Imagenes/ce.jpg);
+    background-color: rgb(189, 238, 240); */
+    background-color: #d1d1d1;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    background-size: cover;
+    
+
+
+}
+
+.barra a {
+
+    color: aqua;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    transition: .3s ease-out all;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.barra a:hover {
+    background: #080205;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+
+body {
+
+    font-family: 'Noto Sans JP', sans-serif;	
+	background: #fffefe;
+
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    color: black;
+    background-image: url(../Acerca/Imagenes/acerca.jpg);
+}
+
+.contenedor_barra {
+  
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+#contenedor {
+    display: flex;
+    flex-direction: column; /* Alinear el contenido en columna */
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    max-width: 500px; /* Especifica el valor de max-width en px */
+    width: 100%; /* Para que se ajuste al tamaño de la pantalla en dispositivos pequeños */
+    padding: 20px; /* Opcional: agrega espacio alrededor del contenido */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  h2 {
+      text-align: center;
+      color: #333;
+  }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+      width: 100%; /* Asegura que el formulario se ajuste al contenedor */
+  }
+  
+  label {
+      margin-top: 10px;
+      color: #333;
+  }
+  
+  input, textarea {
+      margin-top: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+      width: 100%; /* Asegura que los inputs llenen el ancho disponible */
+      box-sizing: border-box;
+  }
+  
+  button {
+      margin-top: 20px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background-color: #45a049;
+  }
