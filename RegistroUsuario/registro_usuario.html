@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>Formulario Registro</title>
+    <link rel="stylesheet" href="registro.css">
+    <style type="text/css">
+        .error {
+            color: red;
+            font-size: 16px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="barra">
+            <div class="contenedor_barra">
+
+                <img src="Imagenes/lop1.png" alt="Logo del hotel">
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Contacto</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Precios</a>
+
+
+
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div id="contenedor">
+        <div id="contenedorcentrado">
+            <div id="login">
+                <h2>Formulario de Registro</h2>
+                <form id="registrationForm" method="post">
+
+                    <label for="identificacion">Identificación:</label>
+                    <input type="text" id="identificacion" name="identificacion" required
+                        placeholder="Digite su identificacion">
+                    <span class="error" id="identificacionError"></span>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Escriba su nombre">
+                    <span class="error" id="nombreError"></span>
+
+                    <label for="apellidoUno">Primer Apellido:</label>
+                    <input type="text" id="apellidoUno" name="apellidoUno" required placeholder="Escriba su apellido">
+                    <span class="error" id="apellidUnoError"></span>
+
+                    <label for="appelidoDos">Segundo Apellido:</label>
+                    <input type="text" id="apellidoDos" name="apellidoDos" required placeholder="Escriba su apellido">
+                    <span class="error" id="apellidoDosError"></span>
+
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Digite su telefono">
+                    <span class="error" id="telefonoError"></span>
+
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="Escriba su correo electronico">
+                    <span class="error" id="correoError"></span>
+
+                    <label for="genero">Genero:</label>
+
+                    <select>
+
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <span class="error" id="generoError"></span>
+
+                         <br>
+                    <button title="Click para enviar" class="button_submit" type="submit"
+                        onClick="return validateForm()">Enviar</button>
+                    <button title="Click para eliminar" class="button_reset" type="reset">Limpiar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script_registro.js"></script>
+</body>
+
+</html>
