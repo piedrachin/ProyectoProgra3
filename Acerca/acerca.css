@@ -139,7 +139,7 @@ justify-content: center;
 @media (max-width: 1200px){
     .contenedor{
         min-width: 820px;
-        background-color: rgb(24, 98, 194);
+        background-color: rgb(183, 226, 226);
         flex-direction: column;
         align-items: center;
     }
@@ -152,7 +152,7 @@ justify-content: center;
 @media (max-width: 800px){
     .contenedor{
         min-width: 100%;
-        background-color: rgb(24, 98, 194);
+        background-color: rgb(183, 226, 226);
         flex-direction: column;
         align-items: center;
         margin: 0 auto;  /* Centra el contenedor en la pantalla */
