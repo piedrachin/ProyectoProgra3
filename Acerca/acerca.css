@@ -9,13 +9,13 @@ body{
    color: black;
    background-image: url(../Imagenes/acerca.jpg);
 }
-
+/*
 .contenedor{
        background-color: rgb(183, 226, 226);
       
        
 }
-
+*/
 .bienvenido h3{
     align-items: center;
     display: flex;
