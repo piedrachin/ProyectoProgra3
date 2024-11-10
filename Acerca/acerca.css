@@ -92,28 +92,34 @@ justify-content: center;
 
 /* Estilos de la lista */
 #lista {
-    list-style-type: none; /* Elimina las viñetas predeterminadas */
+    list-style-type: none;
     padding: 0;
-    display: flex; /* Los alinea horizontalmente */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
-    gap: 10px; /* Espacio entre los elementos */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
 }
 
 /* Estilos para cada elemento de la lista */
 #lista li {
-    width: 150px;            /* Ancho del cuadrado */
-    height: 150px;           /* Alto del cuadrado */
-    background-color: rgb(226, 226, 193); /* Color de fondo */
+    width: 150px;
+    height: 150px;
+    background-color: rgb(226, 226, 193);
     color: black;
     display: flex;
-    align-items: center;     /* Centra el texto verticalmente */
-    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center;
+    justify-content: center;
     font-size: 1rem;
-    border-radius: 10px;     /* Opcional: bordes redondeados */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
+    transition: transform 0.3s ease; /* Suaviza la transformación */
 }
+
+#lista li:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el puntero */
+}
+
 
 
 
