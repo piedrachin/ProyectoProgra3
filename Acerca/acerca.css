@@ -1,0 +1,168 @@
+
+
+body{
+
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: normal;
+   font-size: 100%;
+   margin: 0;
+   color: black;
+   background-image: url(../Imagenes/acerca.jpg);
+}
+
+.contenedor{
+       background-color: rgb(183, 226, 226);
+      
+       
+}
+
+.bienvenido h3{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+} .bienvenido p{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.1); /*con esto creo un border suave */
+    border-style: solid;
+    content: normal;
+    background-color: rgb(226, 226, 193);
+}
+
+.mision h3{
+align-items: center;
+display: flex;
+justify-content: center;
+
+}
+ .mision p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.1);  /*con esto creo un border suave */
+    border-style: solid;
+    content: normal;
+    background-color: rgb(226, 226, 193);
+}
+
+.vision h3{
+   
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+        
+} .vision p{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    content: normal;
+    background-color:  rgb(226, 226, 193);
+}
+
+/* Estilos generales */
+.instalaciones h3{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+} 
+.instalaciones p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Estilos de la lista */
+#lista {
+    list-style-type: none; /* Elimina las viñetas predeterminadas */
+    padding: 0;
+    display: flex; /* Los alinea horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+    gap: 10px; /* Espacio entre los elementos */
+    justify-content: center;
+}
+
+/* Estilos para cada elemento de la lista */
+#lista li {
+    width: 150px;            /* Ancho del cuadrado */
+    height: 150px;           /* Alto del cuadrado */
+    background-color: rgb(226, 226, 193); /* Color de fondo */
+    color: black;
+    display: flex;
+    align-items: center;     /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    font-size: 1rem;
+    border-radius: 10px;     /* Opcional: bordes redondeados */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    text-align: center;
+}
+
+
+
+.compromiso h3{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+} 
+.compromiso p{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    border-style: solid;
+    content: normal;
+    background-color: rgb(226, 226, 193);
+}
+/* Vista para pantallas de 1200px*/
+@media (max-width: 1200px){
+    .contenedor{
+        min-width: 820px;
+        background-color: rgb(153, 153, 121);
+        flex-direction: column;
+        align-items: center;
+    }
+    h1.acerca{
+
+        order:-1;
+    }
+}
+/* Vista para pantallas de 800px*/
+@media (max-width: 800px){
+    .contenedor{
+        min-width: 100%;
+        background-color: rgb(145, 145, 62);
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;  /* Centra el contenedor en la pantalla */
+        text-align: center;          /* Centra el texto dentro del contenedor */
+        display: flex;    
+        justify-content: center;
+    }
+    h1.acerca{
+
+        order:-1;
+    }
+}
+
