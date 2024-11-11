@@ -1,3 +1,20 @@
+/*
+IDENTIFICADORES: 
+Son elementos que se usan solo una vez en el codigo de una pagina HTML
+y se puede aplicarle un estilo particular
+Se usa #identificador para declarar el bloque y en el HTML se instancia con ID
+
+CLASES:
+Se usa una clase para declarar elementos que podemos usar mas de una vez en 
+una pagina
+se usa .clase(punto y el nombre de la clase) para declarar el bloque y en el Html
+se instancia con un CLASS
+
+ETIQUETAS PROPIAS HTML
+se usa el nombre de la etiqueta y se le asocia un bloque de codigo, ej body
+*/
+
+
 * {
 
     margin: 0;
