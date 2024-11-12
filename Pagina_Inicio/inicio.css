@@ -1,0 +1,163 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.barra {
+  /*  background-image: url(../Imagenes/ce.jpg);
+    background-color: rgb(189, 238, 240); */
+    background-color: #d1d1d1;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    background-size: cover;
+    
+
+
+}
+
+.barra a {
+
+    color: aqua;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    transition: .3s ease-out all;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;	
+}
+
+.barra a:hover {
+    background: #080205;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contenedor_barra {
+  
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+body {
+
+    font-family: 'Noto Sans JP', sans-serif;	
+	background: #fffefe;
+
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    color: black;
+    background-image: url(../Pagina_Inicio/Imagenes/corales.jpg);
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    max-width: 400px;
+    background-color: rgb(166, 169, 190);
+    /*le cambio la altura*/
+    border-radius:25px 25px 25px 25px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px 7px rgba(5, 0, 0, 0.15);
+    margin-top: 100px;
+    opacity: .85;
+    filter: alpha(opacity=.85);
+}
+
+.contenedor:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-style: solid;
+}
+
+.inicio{
+    height: 500px;
+    width: 335px;
+    text-align: center;
+
+}
+
+
+.inicio label{
+    display: block;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:120%;
+    color:rgb(3, 3, 26);
+    margin-top:15px;    
+}
+
+.inicio input{
+    display:block;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:105%;
+    color:#03f;
+    margin: 10px 20px 10px 10px;    
+    width:90%;
+    height:40px;
+    padding: 3px 15px 3px 10px;
+    border-radius:25px 25px 25px 25px;
+    box-sizing:border-box;
+}
+.inicio input:hover{
+    border-color: rgb(28, 43, 102);
+    border-style: solid;
+}
+
+h3{
+    font-family:Verdana, Geneva, sans-serif;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #27263a;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+}
+button:hover{
+    background-color: rgb(79, 196, 94);
+    border-style: solid;
+    border-color: #27263a;
+}
+
+
+img{
+    transition: transform 0.3s ease; /* Suaviza el efecto de zoom */
+}
+img:hover{
+
+    transform: scale(1.1);
+}
+
+
