@@ -76,7 +76,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 500px;
     max-width: 400px;
     background-color: rgb(166, 169, 190);
     /*le cambio la altura*/
