@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner y Slider */
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+/* Información del Hotel */
+.info-hotel {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.info-hotel h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.info-hotel p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.info-hotel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-hotel li {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Testimonios */
+.testimonios {
+    background-color: #e2e2e2;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonios h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonio {
+    margin: 20px 0;
+}
+
+.testimonio footer {
+    font-style: italic;
+    color: #555;
+}
+
+/* Redes Sociales */
+.redes-sociales {
+    padding: 40px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
