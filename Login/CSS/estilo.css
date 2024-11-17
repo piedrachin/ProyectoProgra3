@@ -1,0 +1,142 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+body
+{   
+    background-color: darkgrey;
+    background-image:url(../Image/hotel1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+   
+   
+
+    .navbar{
+        background-color: #c47f3f;
+        position: sticky;
+        top:0;
+        width: 100vw;
+        background-size: cover;
+        opacity: 0.70;
+       
+
+
+    }
+    .navbar a {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    transition: .3s ease-out all;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+   .navbar a:hover {
+    background: #caa76e;
+    color: #ffffff;
+    text-decoration: none;
+   }
+
+    .contenedor {
+  
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+}
+
+.form-login
+{
+    width: 450px;
+    height: 400px;
+    background: white;
+    margin:auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #c47f3f;
+    color: white;
+    opacity: 0.85;
+}
+
+.form-login h3 
+{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+    color:#c47f3f;
+
+}
+
+.controles
+{
+    width: 100%;
+    border: 1px solid #90afc6;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #f1f1f1;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.boton
+{
+    width: 100%;
+    height: 40px;
+    background: #c47f3f;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.boton2
+{
+    width: 50%;
+    height: 25px;
+    background: #c47f3f;
+    color: white;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.form-login p
+{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+
+}
+
+
+
+
+
+label
+{
+color:black
+}
+
+.controles::placeholder {
+    color: rgb(5, 5, 5); 
+    opacity: 0.80;
+  
+}
