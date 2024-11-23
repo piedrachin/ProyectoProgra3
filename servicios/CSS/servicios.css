@@ -14,142 +14,119 @@ a:hover {
 }
 
 body {
-    font-family: 'Noto Sans JP', sans-serif;	
-	background: #fffefe;
+    height: 200vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image:url(../Image/hotel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin:0;
 }
 
     
+.navbar{
+    background-color: #b7c6c8;
+    position: sticky;
+    top:0;
+    width: 100vw;
+    background-size: cover;
+    opacity: 0.70;
+}
+.navbar a {
+color: rgb(255, 255, 255);
+display: inline-block;
+padding: 20px;
+width: 100%;
+text-align: center;
+color: black;
+transition: .3s ease-out all;
+font-size: 18px;
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+}
 
-    
+.navbar a:hover {
+background: #91c9df;
+color: #ffffff;
+text-decoration: none;
+}
 
-    .navbar{
-        background-image:url(../Image/ce.jpg);
-        position: sticky;
-        top:0;
-        width: 100vw;
-        background-size: cover;
-       
-
-
-    }
-    .navbar a {
-    color: aqua;
-    display: inline-block;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    color: black;
-    transition: .3s ease-out all;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    }
-
-   .navbar a:hover {
-    background: #080205;
-    color: #ffffff;
-    text-decoration: none;
-   }
-
-   .contenedor {
-  
-	max-width: 1000px;
-	width: 90%;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
+.contenedor {
+max-width: 1000px;
+width: 90%;
+margin: auto;
+display: flex;
+justify-content: space-between;
 }
    
 .contenedor-centrado{
-
-    display:flex;
-    align-items: left;
-    justify-content: left;
-    flex-direction: row;
-    background-size: cover;
-    min-height: 100vh;
-    width: 100vw;
-    padding:80px;
-    background-image:url(../Image/hotel.jpg);
-   
-    filter: alpha(opacity=60); 
-    
-
-}
-
-.banner h2{
-
-
-    color: rgb(5, 0, 0);
-    font-size: 60px;
-    font-weight: bold; /* Se añadió el punto y coma */
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold; /* Esta propiedad está repetida, puedes eliminar una de ellas */
-    font-size: 45px; /* Esta propiedad está sobrescribiendo la anterior, decide cuál deseas usar */
-    color: #070707; /* Esta propiedad sobrescribe el valor de color anterior, también elige cuál usar */
-    
-    
-}
-
-.card {
-    position: relative;
-    width: 300px;
-    height: 350px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Esto ayuda a distribuir el contenido */
+    max-width: 1100px;
+    background-color: rgba(217, 224, 233, 0);
+    opacity: 0.85;
+    margin: auto;
+    padding: 20px 30px;
+}
+
+.card
+{   
+    width: 100%;
     margin: 20px;
-}
-
-.card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 6px;
     overflow: hidden;
-    transition: .5s;
+    background: #ffffff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
 }
 
-.card .front {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column; /* Usa flex para que el contenido se distribuya */
-    justify-content: flex-end; /* Alinea el contenido en la parte inferior */
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
+    transform: translateY(-3%);
 }
 
-.card .front img {
+.card img
+{
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+    height: 210px;
+
+
+
+
 }
 
-.card .front h3 {
+.contenedor-centrado .card figure img {
     width: 100%;
-    height: 45px;
-    line-height: 45px;
+    height: 25vb;
+    object-fit: cover; /* Opcional: Ajusta cómo se muestra la imagen dentro del contenedor */
+    border-radius: 10px; /* Opcional: Redondea las esquinas */
+}
+
+h2 {
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.4);
+    font-size: 2rem; 
+    text-align: center; 
+    margin-top: 2rem; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.card .contenido
+{
+    padding: 15;
     text-align: center;
+
+}
+.card .contenido p
+{
+    line-height: 1.5;
+    color: #080707;
 }
 
-.card .back {
-    transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
-    padding: 15px;
-    color: #f3f3f3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.card:hover .front{
-    transform:perspective(600px) rotateY(180deg);
-}
-
-.card:hover .back{
-    transform:perspective(600px) rotateY(360deg);
+.card .contenido h3
+{   
+    font-weight: 400;
+    margin-bottom: 15px;
 }
