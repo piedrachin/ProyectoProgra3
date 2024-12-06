@@ -1,0 +1,255 @@
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    
+    header{
+        width: 100%;
+        height: 70px;
+        background-image:url(../Image/fondo.jpeg);
+        text-align: center;
+    
+    }
+    
+    header nav{
+    
+        width:80%;
+        height: auto;
+        margin: auto;
+        padding:5px;
+    }
+    
+    nav ul{
+        list-style: none;
+    }
+    
+    
+    .menu li{
+        position: relative;
+        display: inline-block;
+    }
+    
+    
+    .menu > li > a{
+        text-decoration: none;
+        color: #000000;
+        display: block;
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+    
+    
+    .menu > li:hover > .sub-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .menu li a:hover{
+        color: blueviolet;
+        transition: all .3s ease-in-out;
+    
+    }
+    
+    /*Submenu*/
+    
+    .sub-menu{
+        position:absolute;
+        background-color: black;
+        width: 100%;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .sub-menu > li > a{
+        text-decoration: none;
+        color: #f4f4f4;
+        display: block;
+        font-size: 14px;
+        padding: 15px 20px;
+       
+    }
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 90%;
+    height: 100%;
+    padding-top: 120px;
+}
+
+#contenedorcentrado {
+    max-width: 1000px;
+    width: 90%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login {
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+  
+    
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px; /* Más espacio interno para mayor legibilidad */
+    border-top: 4px solid #63a0c1;
+    color: rgb(0, 0, 0);
+    border-radius: 8px; /* Más redondeado para un diseño moderno */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    opacity: 0.95;
+}
+
+#login label
+{
+    display: block;
+    font-family:'Times New Roman', Times, serif;
+    font-size:120%;
+    color:rgb(4, 4, 49);
+    margin-top:15px;    
+    
+    
+}
+#login input
+{
+    display:block;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:105%;
+    color:rgb(1, 1, 1);
+    margin: 10px 20px 10px 10px;    
+    width:90%;
+    height:40px;
+    padding: 3px 15px 3px 10px;
+    border-radius:25px 25px 25px 25px;
+    box-sizing:border-box;
+}
+
+.button_submit
+{
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:#63a0c1; /* Color base del botón */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto de sombra */
+}
+
+.button_submit:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta el desplazamiento y la opacidad de la sombra */
+  }
+
+
+.button_reset
+{ border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #63a0c1; /* Color base del botón */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto de sombra */
+}
+    .button_reset:hover {
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta el desplazamiento y la opacidad de la sombra */
+      }
+    
+
+      .redes-sociales .copy{
+    text-align: right;
+}
+
+
+
+hr
+{
+    border-top:3px solid #f00;
+    border-bottom:2px solid #f99;   
+}
+
+.footer
+{   
+    display:block;
+    font-size:90%;
+    text-align:center;
+    margin-bottom:5px;
+    
+}
+
+.footer a
+{
+    display:block;
+    color:#00F;
+}
+
+.footer a:hover
+{
+    color:#0ff;
+    font-size:140%  
+}
+
+#ladoderecho{
+    flex-direction: column;
+    min-width: 500px;
+    max-width: 850px;
+    width:90%;
+    background-color:brown;
+    opacity: 0.40;
+    filter: alpha(opacity=40);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, f, 0.5);
+    border-radius: 20px 35px 20px 35px;
+
+}
+
+/* Redes Sociales */
+.redes-sociales {
+    padding: 40px;
+    text-align: center;
+    background-image:url(../Image/fondo.jpeg);
+    color: rgb(0, 0, 0);
+    margin-top: 150px;
+}
+
+.social-icons a {
+    color: rgb(0, 0, 0);
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width:700px) {
+        .contenedor_barra {
+            flex-direction: column; /* Cambia la disposición a vertical */
+            align-items: center; /* Centra los elementos */
+            gap: 10px; /* Añade espacio entre los elementos */
+        }
+    
+        .contenedor_barra a {
+            font-size: 20px; /* Reduce el tamaño del texto */
+        }
+    
+        .contenedor_barra img {
+            margin-bottom: 10px; /* Añade un margen inferior al logo */
+        }
+    }
+

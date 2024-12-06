@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../Image/playa.jpg);
+  
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-image: url(../Image/fondo.jpeg);
+    text-align: center;
+}
+
+header nav {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-size: 18px;
+    padding: 15px 20px;
+}
+
+.menu > li:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu li a:hover {
+    color: blueviolet;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Submenú */
+.sub-menu {
+    position: absolute; /* Posiciona el submenú sobre el contenedor */
+    background-color: black;
+    width: 200px; /* Ajusta el ancho del submenú */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000; /* Prioridad visual alta */
+}
+
+/* Mostrar el submenú al pasar el cursor */
+.menu > li:hover > .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estilo general del submenú */
+.sub-menu > li > a {
+    text-decoration: none;
+    color: #f4f4f4;
+    display: block;
+    font-size: 14px;
+    padding: 15px 20px;
+}
+
+/* Asegurar que el contenedor no tape el submenú */
+.contenedor {
+    position: relative;
+    z-index: 1; /* Mantiene los elementos detrás del submenú */
+    display: flex; /* Flex para dispositivos */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 90%;
+    height: 100%;
+    background-image: url(../Acerca/Imagenes/isla.jpg);
+    background-size: cover;
+   
+}
+
+
+h2{
+
+    margin: auto 20px;
+    font-family: 'Times New Roman', Times, serif
+
+
+
+}
+/* Formulario central */
+#ModificarLogin {
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px; /* Más espacio interno para mayor legibilidad */
+    color: rgb(0, 0, 0);
+    border-radius: 25px; /* Más redondeado para un diseño moderno */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    opacity: 0.95;
+    background-image: url(../Image/formulario.jpg);
+    gap: 20px;
+}
+
+#ModificarLogin label {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    color: rgb(4, 4, 49);
+    margin-top: 15px;
+}
+
+#ModificarLogin input {
+    display: block;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 105%;
+    color: rgb(1, 1, 1);
+    margin: 10px 20px 10px 10px;
+    width: 90%;
+    height: 40px;
+    padding: 3px 15px 3px 10px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+/* Botón de actualizar (centrado y limpio) */
+.btn_actualizar {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #63a0c1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 20px auto; /* Centra el botón */
+    width: 40%;
+}
+
+.btn_actualizar:hover {
+    background-color: #030303;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Cambia a menú vertical */
+        align-items: center;
+    }
+
+    .menu > li > a {
+        font-size: 14px; /* Texto más pequeño */
+        padding: 10px;
+    }
+
+    .sub-menu {
+        width: 100%; /* Submenú ocupa todo el ancho */
+    }
+
+    #ModificarLogin {
+        width: 90%; /* Ocupa todo el ancho en móviles */
+        margin: 100px auto;
+        margin-bottom: 20px;
+    }
+
+    .btn_actualizar {
+        width: 80%; /* Botón más ancho */
+    }
+}
+
+

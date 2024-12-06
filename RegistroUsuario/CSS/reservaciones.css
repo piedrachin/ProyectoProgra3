@@ -1,0 +1,176 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+body
+{   
+    background-color: darkgrey;
+    background-image:url(../Image/playa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+}
+   
+   
+
+    .navbar{
+        background-image:url(../Image/fondo.jpeg);
+        position: sticky;
+        top:0;
+        width: 100vw;
+        background-size: cover;
+        opacity: 0.80;
+       
+
+
+    }
+    .navbar a {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    transition: .3s ease-out all;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+   .navbar a:hover {
+    background: #c4e9e9;
+    color: #000000;
+    text-decoration: none;
+   }
+
+    .contenedor {
+       
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor-centrado{
+    max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+    
+}
+
+
+/* Resto del código CSS */
+
+.form-reservas {
+    width: 500px;
+    height: auto; /* Cambié a auto para que el alto sea dinámico */
+    background-image:url(../Image/fondo.jpeg);
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 30px;
+    border-top: 4px solid #020202;
+    border-left: 4px solid #030303;
+    border-right: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Añadido espacio entre los campos y el botón */
+    justify-content: flex-start;
+    opacity: 0.90;
+}
+
+.form-reservas h3 {
+    color: #000;
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 25px;
+}
+
+
+label{
+    color: #000;
+    font-size: 20px;
+
+
+
+
+}
+
+/* Inputs y selects dentro del formulario */
+.controls {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #39a8ac;
+    font-size: 18px;
+}
+
+/* Botón de reserva centrado al final */
+.boton-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacio entre los campos y el botón */
+}
+
+/* Estilo para el botón */
+.button_submit {
+    border: none;
+    color: white;
+    padding: 9px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #038aab;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.button_submit:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+select{
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #39a8ac;
+    font-size: 18px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
